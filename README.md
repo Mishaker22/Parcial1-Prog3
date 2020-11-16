@@ -1,3 +1,3 @@
-# Parcial1-Prog3
+# Parciales-Prog3
 
 Michell quintero hernandez
