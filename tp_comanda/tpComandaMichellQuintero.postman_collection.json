@@ -1,0 +1,464 @@
+{
+	"info": {
+		"_postman_id": "b30596b2-dbdb-4de8-8398-7c2e63dc5cf4",
+		"name": "tpComandaMichellQuintero",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/tp_comanda/public/staff_registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "camila@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "michis",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "camila parotti",
+							"type": "text"
+						},
+						{
+							"key": "usuario",
+							"value": "parotti",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "mozo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tp_comanda/public/staff_registro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tp_comanda",
+						"public",
+						"staff_registro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/tp_comanda/public/clientes_registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "Diego pena",
+							"type": "text"
+						},
+						{
+							"key": "usuario",
+							"value": "diego",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "diego@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "michis",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tp_comanda/public/clientes_registro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tp_comanda",
+						"public",
+						"clientes_registro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/tp_comanda/public/login_staff",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidGlwbyI6InNvY2lvIn0.9IldonfEcsi9-Csunguqp-HMQOHGHMT6htzWipvmiLQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "DANIS",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "michis",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tp_comanda/public/login_staff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tp_comanda",
+						"public",
+						"login_staff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/tp_comanda/public/login_cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "diego",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "michis",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tp_comanda/public/login_cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tp_comanda",
+						"public",
+						"login_cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/tp_comanda/public/alto_pedido/idcliente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"type": "text",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidGlwbyI6Im1vem8ifQ.T0eFJEkYEjkTLYchOjP5kRwUNfkRkKS08okEYL23q-k"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "item1",
+							"value": "negra",
+							"type": "text"
+						},
+						{
+							"key": "item2",
+							"value": "roja",
+							"type": "text"
+						},
+						{
+							"key": "item3",
+							"value": "rubia",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id_cliente",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tp_comanda/public/alto_pedido/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tp_comanda",
+						"public",
+						"alto_pedido",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/tp_comanda/public/preparar_pedido/6",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwidGlwbyI6ImNlcnZlY2VybyJ9.HtbgegBlF-_ZTTpBlA-7p5FYv9hn6uNr0iLbrSix5E8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "estado",
+							"value": "EN PREPARACION",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tp_comanda/public/preparar_pedido/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tp_comanda",
+						"public",
+						"preparar_pedido",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/tp_comanda/public/listo_para_servir/9",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwidGlwbyI6ImJhcnRlbmRlciJ9.kaPfNdquHJ3HSVsq2IDF-QU2rbv9F8nM7yeiYbPISrw ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "estado",
+							"value": "LISTO PARA SERVIR",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tp_comanda/public/listo_para_servir/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tp_comanda",
+						"public",
+						"listo_para_servir",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/tp_comanda/public/get_all_socios",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidGlwbyI6InNvY2lvIn0.9IldonfEcsi9-Csunguqp-HMQOHGHMT6htzWipvmiLQ ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/tp_comanda/public/get_all_socios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tp_comanda",
+						"public",
+						"get_all_socios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/tp_comanda/public/get_one_cliente/0911M/d825a",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.4_tmEQJmI--rsmnsJtoMHWjUXh6K-1s9ymIC0avqZu4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/tp_comanda/public/get_one_cliente/1707O/aeaf2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tp_comanda",
+						"public",
+						"get_one_cliente",
+						"1707O",
+						"aeaf2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/tp_comanda/public/cobrar_mesa/2702F",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidGlwbyI6InNvY2lvIn0.9IldonfEcsi9-Csunguqp-HMQOHGHMT6htzWipvmiLQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/tp_comanda/public/cobrar_mesa/1708J",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tp_comanda",
+						"public",
+						"cobrar_mesa",
+						"1708J"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/tp_comanda/public/cerrar_mesa/2702F",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidGlwbyI6InNvY2lvIn0.9IldonfEcsi9-Csunguqp-HMQOHGHMT6htzWipvmiLQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/tp_comanda/public/cerrar_mesa/1708J",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tp_comanda",
+						"public",
+						"cerrar_mesa",
+						"1708J"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/tp_comanda/public/pendientes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.4_tmEQJmI--rsmnsJtoMHWjUXh6K-1s9ymIC0avqZu4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/tp_comanda/public/pendientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tp_comanda",
+						"public",
+						"pendientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/tp_comanda/public/login_staff/7",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/tp_comanda/public/login_staff/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tp_comanda",
+						"public",
+						"login_staff",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
